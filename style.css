@@ -129,7 +129,7 @@ button span {
   opacity: 1;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) {
   .lamp-container {
     left: 23%;
   }

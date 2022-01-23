@@ -128,3 +128,25 @@ button span {
 .light-on {
   opacity: 1;
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .lamp-container {
+    left: 23%;
+  }
+  nav button {
+    position: absolute;
+    left: 75%;
+    top: 12%;
+  }
+  .text-container {
+    margin-left: 0;
+    margin: 30% 5%;
+  }
+  .control {
+    margin-top: 22px;
+    padding-bottom: 22px;
+  }
+  .text-container h1 {
+    font-size: 64px;
+  }
+}

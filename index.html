@@ -5,28 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just Simple Lamp</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
-      <nav>
-        <img src="src/menu.png" class="menu-img" />
-        <img src="src/logo.png" class="logo" />
-        <ul>
-          <li><a href="#">Latest</a></li>
-          <li><a href="#">Modern</a></li>
-          <li><a href="#">Contemporary</a></li>
-          <li><a href="#">Affordable</a></li>
-        </ul>
-        <button type="button" onclick="toggleBtn()" id="btn">
-          <span></span>
-        </button>
-      </nav>
-      <div class="lamp-container">
-        <img src="src/lamp.png" alt="lamp" class="lamp" />
-        <img src="src/light.png" alt="light" class="light" id="light" />
-      </div>
-      <div class="text-container">
+    <div>
+      <header>
+        <nav>
+          <img src="src/menu.png" class="menu-img" />
+          <img src="src/logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Modern</a></li>
+            <li><a href="#">Contemporary</a></li>
+            <li><a href="#">Affordable</a></li>
+          </ul>
+          <button type="button" onclick="toggleBtn()" id="btn">
+            <span></span>
+          </button>
+        </nav>
+        <div class="lamp-container">
+          <img src="src/lamp.png" alt="lamp" class="lamp" />
+          <img src="src/light.png" alt="light" class="light" id="light" />
+        </div>
+      </header>
+
+      <main class="text-container">
         <h1>de Finibus Bonorum et Malorum</h1>
         <p>
           "At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -52,7 +56,10 @@
           <div class="line"><span></span></div>
           <p>05</p>
         </div>
-      </div>
+      </main>
+      <footer>
+        <div>Maksym Matsydulskas ©2022</div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>

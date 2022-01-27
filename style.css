@@ -21,6 +21,7 @@ nav .menu-img {
   width: 25px;
   margin-right: 20px;
   cursor: pointer;
+  visibility: hidden;
 }
 nav .logo {
   width: 160px;
@@ -39,7 +40,8 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
 }
-button {
+
+.light-button {
   background: #efefef;
   height: 30px;
   width: 60px;
@@ -100,7 +102,7 @@ button span {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 150px;
+  margin-top: 40px;
 }
 .control .line {
   width: 250px;
@@ -134,6 +136,40 @@ footer div {
   color: grey;
   margin: 20px 0;
 }
+.off-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0px;
+  background-color: #1d2026;
+  opacity: 0.98;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+.off-canvas nav ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.off-canvas nav ul li {
+  background-color: none;
+  padding: 4px;
+  font-size: 16px;
+  transition: linear 0.5s;
+}
+.off-canvas nav ul li:hover {
+  background-color: #00986f;
+}
+.close-btn {
+  position: relative;
+  margin-left: 220px;
+  background-color: transparent;
+  border-style: none;
+  color: #00986f;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 740px) {
   .lamp-container {
@@ -157,5 +193,8 @@ footer div {
   }
   nav ul {
     display: none;
+  }
+  nav .menu-img {
+    visibility: visible;
   }
 }
